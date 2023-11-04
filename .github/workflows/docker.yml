@@ -12,12 +12,13 @@ on:
       - Dockerfile
       - .dockerignore
       - pkg-info.json
+      - .github/workflows/docker.yml
   pull_request:
     paths:
       - Dockerfile
       - .dockerignore
       - pkg-info.json
-    branches: ["main"]
+      - .github/workflows/docker.yml
 
 jobs:
   build:
@@ -29,9 +30,9 @@ jobs:
       id-token: write
     with:
       docker-username: firelightflagbot
-      pkg-version: ${{ inputs.pkg-version || '4.0.0.688' }}
+      pkg-version: ${{ inputs.pkg-version }}
       platforms: linux/amd64,linux/arm64
+      docker-repository: firelightflagbot/sonarr
       registry: docker.io
-      tags: firelightflagbot/sonarr:${{ inputs.pkg-version || '4.0.0.688' }}
     secrets:
       docker-password: ${{ secrets.DOCKER_HUB_PAT }}
