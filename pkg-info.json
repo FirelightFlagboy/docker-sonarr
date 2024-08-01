@@ -1,6 +1,6 @@
 {
   "name": "Sonarr",
-  "latest_version": "4.0.5.1801",
+  "latest_version": "4.0.8.1988",
   "versions": {
     "4.0.0.688": {
       "amd64": {
@@ -120,6 +120,18 @@
         "filename": "Sonarr.develop.4.0.5.1801.linux-musl-arm64.tar.gz",
         "download_url": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.5.1801/Sonarr.develop.4.0.5.1801.linux-musl-arm64.tar.gz",
         "digest": "sha256:51e2230e357e5d1106834aa485d2fe67969338ca11b222d14eaaf3cae09dcd53"
+      }
+    },
+    "4.0.8.1988": {
+      "amd64": {
+        "filename": "Sonarr.develop.4.0.8.1988.linux-musl-x64.tar.gz",
+        "download_url": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.8.1988/Sonarr.develop.4.0.8.1988.linux-musl-x64.tar.gz",
+        "digest": "sha256:1022362ddcc66b44455268b6858bb1692877a32a186f6aba59da4764702ffa3e"
+      },
+      "arm64": {
+        "filename": "Sonarr.develop.4.0.8.1988.linux-musl-arm64.tar.gz",
+        "download_url": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.8.1988/Sonarr.develop.4.0.8.1988.linux-musl-arm64.tar.gz",
+        "digest": "sha256:b0b281f1883ba8ea32185ff3d3609609f6ee977a5176d3a23415767f50a4a2ba"
       }
     }
   },
