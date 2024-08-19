@@ -1,6 +1,6 @@
 {
   "name": "Sonarr",
-  "latest_version": "4.0.8.1988",
+  "latest_version": "4.0.8.2208",
   "versions": {
     "4.0.0.688": {
       "amd64": {
@@ -133,9 +133,23 @@
         "download_url": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.8.1988/Sonarr.develop.4.0.8.1988.linux-musl-arm64.tar.gz",
         "digest": "sha256:b0b281f1883ba8ea32185ff3d3609609f6ee977a5176d3a23415767f50a4a2ba"
       }
+    },
+    "4.0.8.2208": {
+      "amd64": {
+        "filename": "Sonarr.develop.4.0.8.2208.linux-musl-x64.tar.gz",
+        "download_url": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.8.2208/Sonarr.develop.4.0.8.2208.linux-musl-x64.tar.gz",
+        "digest": "sha256:5b1c8b4a26c556e9150458a6ebda788e5350b6ab24f6e37a6451dd14e04b37a7"
+      },
+      "arm64": {
+        "filename": "Sonarr.develop.4.0.8.2208.linux-musl-arm64.tar.gz",
+        "download_url": "https://github.com/Sonarr/Sonarr/releases/download/v4.0.8.2208/Sonarr.develop.4.0.8.2208.linux-musl-arm64.tar.gz",
+        "digest": "sha256:9d5edd049ef3acadbd2f0f9df0ebb51b854a322d3f8af65a095885b77c914402"
+      }
     }
   },
   "mode": "jq-script",
   "document-url": "https://services.sonarr.tv/v1/releases",
-  "script-path": "sonarr.jq"
+  "script-path": "sonarr.jq",
+  "strip_v_prefix": false,
+  "allow_prerelease": false
 }
